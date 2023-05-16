@@ -33,6 +33,10 @@ c:\work>vagrant -v
 Vagrant 2.3.4
 
 Terraform,
+#!/usr/bin/env python3
+a = 1
+b = '2'
+c = a + b
 
 Ansible.
 vagrant@server1:~$ ansible --version
