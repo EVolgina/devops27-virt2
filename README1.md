@@ -62,12 +62,11 @@ all:
     ```
 Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.
 
-# Задача 4
-Воспроизведите практическую часть лекции самостоятельно.
+# Задача 3
+Воспроизведите практическую часть лекции самостоятельно.\
 Создайте виртуальную машину. Зайдите внутрь ВМ, убедитесь, что Docker установлен с помощью команды
 
-```
-sudo systemctl status docker
+``` sudo systemctl status docker
  docker.service - Docker Application Container Engine
      Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
      Active: active (running) since Tue 2023-05-16 06:58:23 UTC; 4min 41s ago
