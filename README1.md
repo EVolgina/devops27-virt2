@@ -25,20 +25,24 @@
 # Задача 3
 Установите на личный компьютер:
 
-VirtualBox,
+```VirtualBox,
 c:\work>vagrant box list
 bento/ubuntu-20.04 (virtualbox, 202212.11.0)
-Vagrant,
+```
+
+```Vagrant,
 c:\work>vagrant -v
 Vagrant 2.3.4
+```
 
-Terraform,
+```Terraform,
 #!/usr/bin/env python3
 a = 1
 b = '2'
 c = a + b
+```
 
-Ansible.
+```Ansible.
 vagrant@server1:~$ ansible --version
 ansible [core 2.12.10]
   config file = /etc/ansible/ansible.cfg
@@ -62,7 +66,7 @@ all:
               ansible_port: 20011
               ansible_user: vagrant
     ungrouped: {}
-vagrant@server1:~$
+    ```
 Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.
 
 Задача 4
