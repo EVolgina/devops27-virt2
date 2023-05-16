@@ -59,46 +59,10 @@ all:
               ansible_port: 20011
               ansible_user: vagrant
     ungrouped: {}
-    ```
-Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.
 
-# Задача 3
+Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.\
+
+# Задача 4
 Воспроизведите практическую часть лекции самостоятельно.\
 Создайте виртуальную машину. Зайдите внутрь ВМ, убедитесь, что Docker установлен с помощью команды
 
-``` sudo systemctl status docker
- docker.service - Docker Application Container Engine
-     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
-     Active: active (running) since Tue 2023-05-16 06:58:23 UTC; 4min 41s ago
-TriggeredBy: ● docker.socket
-       Docs: https://docs.docker.com
-   Main PID: 3930 (dockerd)
-      Tasks: 7
-     Memory: 23.2M
-     CGroup: /system.slice/docker.service
-             └─3930 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-
-May 16 06:58:19 server1 systemd[1]: Starting Docker Application Container Engine...
-May 16 06:58:19 server1 dockerd[3930]: time="2023-05-16T06:58:19.998822487Z" level=info msg="Starting up"
-lines 1-13...skipping...
-● docker.service - Docker Application Container Engine
-     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
-     Active: active (running) since Tue 2023-05-16 06:58:23 UTC; 4min 41s ago
-TriggeredBy: ● docker.socket
-       Docs: https://docs.docker.com
-   Main PID: 3930 (dockerd)
-      Tasks: 7
-     Memory: 23.2M
-     CGroup: /system.slice/docker.service
-             └─3930 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-
-May 16 06:58:19 server1 systemd[1]: Starting Docker Application Container Engine...
-May 16 06:58:19 server1 dockerd[3930]: time="2023-05-16T06:58:19.998822487Z" level=info msg="Starting up"
-May 16 06:58:20 server1 dockerd[3930]: time="2023-05-16T06:58:20.006598540Z" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv>May 16 06:58:21 server1 dockerd[3930]: time="2023-05-16T06:58:21.426464937Z" level=info msg="Loading containers: start."
-May 16 06:58:23 server1 dockerd[3930]: time="2023-05-16T06:58:23.360433689Z" level=info msg="Loading containers: done."
-May 16 06:58:23 server1 dockerd[3930]: time="2023-05-16T06:58:23.682671734Z" level=warning msg="WARNING: No swap limit support"
-May 16 06:58:23 server1 dockerd[3930]: time="2023-05-16T06:58:23.687758076Z" level=info msg="Docker daemon" commit=9dbdbd4 graphdriver=overlay2 version=23.0.6
-May 16 06:58:23 server1 dockerd[3930]: time="2023-05-16T06:58:23.693488362Z" level=info msg="Daemon has completed initialization"
-May 16 06:58:23 server1 systemd[1]: Started Docker Application Container Engine.
-May 16 06:58:23 server1 dockerd[3930]: time="2023-05-16T06:58:23.975357123Z" level=info msg="API listen on /run/docker.sock"
- ```
