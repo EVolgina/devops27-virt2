@@ -26,9 +26,39 @@
 Установите на личный компьютер:
 
 VirtualBox,
+c:\work>vagrant box list
+bento/ubuntu-20.04 (virtualbox, 202212.11.0)
 Vagrant,
+c:\work>vagrant -v
+Vagrant 2.3.4
+
 Terraform,
+
 Ansible.
+vagrant@server1:~$ ansible --version
+ansible [core 2.12.10]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/vagrant/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/vagrant/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Nov 14 2022, 12:59:47) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+vagrant@server1:~$ sudo nano /etc/ansible/hosts
+vagrant@server1:~$ ansible-inventory --list -y
+all:
+  children:
+    nodes:
+      children:
+        manager:
+          hosts:
+            server1.netology:
+              ansible_host: 127.0.0.1
+              ansible_port: 20011
+              ansible_user: vagrant
+    ungrouped: {}
+vagrant@server1:~$
 Приложите вывод команд установленных версий каждой из программ, оформленный в Markdown.
 
 Задача 4
